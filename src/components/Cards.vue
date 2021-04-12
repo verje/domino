@@ -63,7 +63,7 @@ export default {
 
 <style scope>
 #card {
-  border: 1px solid white;
+  border: 2px solid #00E5FF;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
 }
