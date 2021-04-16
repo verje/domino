@@ -13,7 +13,8 @@ export default new Vuex.Store({
     save: false,
     winner: '',
     round: 0,
-    indexTurn: 0 //to Control who is putting the first card in the round
+    indexTurn: 0, //to Control who is putting the first card in the round
+    alert: false
   },
   mutations: {
     incrementScore: (state, params) => {
@@ -64,6 +65,7 @@ export default new Vuex.Store({
           player.score = 0
           player.starter = false
           player.turn = false
+          state.alert = false
         });
     },
     addPlayer(state, name) {
@@ -83,6 +85,7 @@ export default new Vuex.Store({
           winner: winner,
           createdAt : new Date()
         })
+        state.alert = true
       } catch (error) {
         console.log(error)
       }

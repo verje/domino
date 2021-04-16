@@ -1,6 +1,5 @@
 <template>
   <v-footer color="#CFD8DC" inset width="auto">
-
       <v-row justify="center">
         <v-col lg="2" md="3" cols="12" align-self="center" class="text-center">
           <v-chip color="#2E404F" class="ma-2" width="auto"> 
